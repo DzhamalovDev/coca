@@ -1,23 +1,26 @@
 @import './mixins/';
+@import './base/';
+@import './global/';
+
 // @include font-face(Roboto, 'RobotoRegular', 400);
 
 
-header {
-  @include flex-column-all-center;
-  @include small-desctop{
-    color: red;
-  }
+// header {
+//   @include flex-column-all-center;
+//   @include small-desctop{
+//     color: red;
+//   }
 
-  @include tablet{
-    color: darkcyan;
-  }
-  @include small-tablet{
-    color: darkgoldenrod;
-  }
-  @include mobile{
-    color: #0b19b8;
-  }
-  @include small-mobile{
-    color: #f10101;
-  }
-} 
+//   @include tablet{
+//     color: darkcyan;
+//   }
+//   @include small-tablet{
+//     color: darkgoldenrod;
+//   }
+//   @include mobile{
+//     color: #0b19b8;
+//   }
+//   @include small-mobile{
+//     color: #f10101;
+//   }
+// } 
