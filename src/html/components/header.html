@@ -1,7 +1,7 @@
 <header class="header">
   <h1 class="hidden">Coca - Digital Marketing Website. Home page</h1>
   <div class="container header__container">
-    <a href="/" aria-label="Home page">
+    <a href="/" class="header__logo" aria-label="Home page">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="140"
@@ -32,7 +32,7 @@
         />
       </svg>
     </a>
-    <div class="header__right">
+    <div class="header__right" data-burger="menu">
       <nav class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -51,8 +51,15 @@
       </nav>
       <label class="header__switcher">
         <span class="header__switcher-text text-p-default">Dark</span>
-        <input type="checkbox" class="header__switcher-checkbox">
+        <input
+          type="checkbox"
+          class="header__switcher-checkbox"
+          data-theme-switcher
+        />
       </label>
     </div>
+    <button class="burger">
+      <span class="burger__line" aria-label="burger menu"></span>
+    </button>
   </div>
 </header>
