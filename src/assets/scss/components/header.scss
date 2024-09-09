@@ -5,7 +5,7 @@
   // top: 0;
   // left: 0;
   // right: 0;
-  
+
   // transform: translateY(-80%);
   // transition: all 0.5s;
   // opacity: 0;
@@ -160,8 +160,7 @@
       line-height: 1.5;
       color: var(--neutral-color-140);
       transform: translateX(-50%);
-     
-     
+
       @include small-tablet {
         top: -28px;
         font-size: 20px;

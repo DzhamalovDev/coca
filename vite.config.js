@@ -4,19 +4,19 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
-  root: "./src",
+  root: './src',
   server: {
     port: 3000,
     open: true,
   },
   build: {
-    outDir: "../dist",
+    outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
-       input:{
+      input: {
         main: './src/index.html',
-       }
-    }
+      },
+    },
   },
   plugins: [
     injectHTML(),
@@ -31,5 +31,3 @@ export default defineConfig({
     }),
   ],
 });
-
-

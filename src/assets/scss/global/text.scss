@@ -18,7 +18,7 @@
   &-h2 {
     font-size: 56px;
 
-    @include tablet {
+    @include tablet { 
       font-size: 46px;
     }
 
@@ -104,15 +104,15 @@
 
       @include small-mobile {
         font-size: 20px;
-      } 
+      }
 
       &::before {
         content: '';
         display: inline-block;
-        width: 76px;
+        width: 7px;
         height: 1px;
         background-color: var(--neutral-color-100);
-        transform: translateY(-20px);
+        transform: translateY(-43px);
 
         @include mini-desktop {
           display: none;
