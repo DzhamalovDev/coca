@@ -4,26 +4,5 @@
 
 //components
 @import './components/header.scss';
+@import './components/home/hero';
 
-// @include font-face(Roboto, 'RobotoRegular', 400);
-
-
-// header {
-//   @include flex-column-all-center;
-//   @include small-desctop{
-//     color: red;
-//   }
-
-//   @include tablet{
-//     color: darkcyan;
-//   }
-//   @include small-tablet{
-//     color: darkgoldenrod;
-//   }
-//   @include mobile{
-//     color: #0b19b8;
-//   }
-//   @include small-mobile{
-//     color: #f10101;
-//   }
-// } 
