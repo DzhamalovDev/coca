@@ -1,0 +1,174 @@
+.features {
+  padding: 100px 0 94px;
+  @include mobile {
+    padding: 60px 0 64px;
+  }
+
+  &__container {
+    @include flex-all-between;
+
+    @include mini-desktop {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    @include mobile {
+      gap: 25px;
+    }
+
+    @include tablet {
+    }
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &__stats {
+    position: absolute;
+    right: 36px;
+    bottom: 40px;
+    max-width: 290px;
+    padding: 18px;
+    background-color: #fff;
+
+    @include mobile {
+      right: 16px;
+      bottom: 20px;
+    }
+    @include small-mobile {
+      right: 12px;
+      bottom: 12px;
+      padding: 14px;
+      max-width: 240px;
+    }
+
+    &-head {
+      @include flex-all-between;
+      margin-bottom: 19px;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #1d1e25;
+    }
+
+    &-item {
+      @include flex-align-center;
+      gap: 26px;
+
+      &:not(:last-child) {
+        padding-bottom: 23px;
+        border: 1px solid #ededed;
+      }
+      &:last-child {
+        padding-top: 23px;
+      }
+
+      &-img{
+        @include small-mobile{
+          width: 65px;
+        }
+      }
+
+      &-title {
+        margin-bottom: 6px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        color: var(--overview-text-color);
+      }
+      &-price {
+        @include flex-align-center;
+        gap: 12px;
+        margin-bottom: 9px;
+
+        &-num {
+          font-size: 23px;
+          font-weight: 700;
+          line-height: 1.2;
+          color: #1d1e25;
+
+          @include mobile {
+            font-size: 18px;
+          }
+        }
+        &-proc {
+          @include flex-align-center;
+          gap: 5px;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 1.5;
+          color: #1d1e25;
+        }
+      }
+      &-descr {
+        font-size: 9px;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--overview-text-color);
+      }
+    }
+  }
+
+  &__right {
+    max-width: 557px;
+    @include mini-desktop {
+      max-width: 992px;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: #1d1e25;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+  &__descr {
+    max-width: 360px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: var(--overview-text-color);
+
+    @include mini-desktop {
+      max-width: 700px;
+    }
+  }
+
+  &__item {
+    @include flex-align-center;
+    max-width: 393px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--neutral-color-100);
+
+    @include mini-desktop {
+      max-width: 700px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    @include mobile {
+      margin-bottom: 22px;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: 19px;
+      padding-right: 19px;
+      width: 20px;
+      height: 20px;
+      background: url(../icons/features-tick-icon.svg);
+    }
+  }
+}
