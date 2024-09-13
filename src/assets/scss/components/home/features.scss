@@ -1,5 +1,5 @@
 .features {
-  padding: 100px 0 94px;
+  padding: 160px 0 94px;
   @include mobile {
     padding: 60px 0 64px;
   }
@@ -79,7 +79,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: 1.5;
-        color: var(--overview-text-color);
+        color: var(--neutral-color-150);
       }
       &-price {
         @include flex-align-center;
@@ -109,7 +109,7 @@
         font-size: 9px;
         font-weight: 400;
         line-height: normal;
-        color: var(--overview-text-color);
+        color: var(--neutral-color-150);
       }
     }
   }
@@ -124,7 +124,7 @@
     margin-bottom: 24px;
     font-weight: 600;
     letter-spacing: -0.04em;
-    color: #1d1e25;
+    color: var(--neutral-color-100);
 
     @include mobile {
       margin-bottom: 20px;
@@ -135,7 +135,7 @@
     margin-bottom: 40px;
     font-weight: 500;
     line-height: 1.7;
-    color: var(--overview-text-color);
+    color: var(--neutral-color-150);
 
     @include mini-desktop {
       max-width: 700px;
