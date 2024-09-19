@@ -20,20 +20,25 @@ export const useBurger = () => {
   });
 };
 
-//header scroll effect
+// //header scroll effect
 
-let lastScrollTop = 0;
-const header = document.querySelector('.header');
+// let lastScrollTop = 0;
+// const header = document.querySelector('.header');
 
-window.addEventListener('scroll', function () {
-  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+// window.addEventListener('scroll', function () {
+//   const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-  if (scrollTop > lastScrollTop) {
-    header.classList.remove('header--show');
-    header.classList.add('header--border-hidden');
-  } else {
-    header.classList.add('header--show');
-    header.classList.remove('header--border-hidden');
-  }
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-});
+//   if (scrollTop > lastScrollTop) {
+//     header.classList.remove('header--show');
+//     header.classList.add('header--border-hidden');
+//   } else {
+//     header.classList.add('header--show');
+//     header.classList.remove('header--border-hidden');
+//   }
+//   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+// });
+
+
+//Аккордеон
+
+

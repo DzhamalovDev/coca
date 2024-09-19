@@ -3,15 +3,14 @@
   color: #fff;
   background: var(--black-bg-color);
 
-  @include mobile{
+  @include mobile {
     padding-top: 62px;
   }
 
   &__head {
     @include flex-all-between;
-    margin-bottom: 134px; 
-    
-    
+    margin-bottom: 134px;
+
     @include tablet {
       flex-direction: column;
       align-items: flex-start;
@@ -19,12 +18,12 @@
       margin-bottom: 84px;
     }
 
-    @include mobile{
+    @include mobile {
       margin-bottom: 64px;
       align-items: center;
       text-align: center;
     }
-    @include small-mobile{
+    @include small-mobile {
       padding-top: 44px;
     }
   }
@@ -35,11 +34,11 @@
     font-size: 64px;
     line-height: 120%;
 
-    @include tablet{
+    @include tablet {
       font-size: 54px;
     }
 
-    @include mobile{
+    @include mobile {
       font-size: 42px;
     }
   }
@@ -53,7 +52,7 @@
 
   &__link {
     padding: 16px 32px;
-    color: var(--neutral-color-100);
+    color: #1d1e25;
     background-color: #fff;
   }
 
@@ -61,7 +60,7 @@
     display: inline-block;
     margin-bottom: 19px;
 
-    @include tablet{
+    @include tablet {
       margin-bottom: 0;
     }
   }
@@ -76,18 +75,17 @@
       gap: 40px;
     }
 
-     @include mobile{
+    @include mobile {
       flex-direction: column-reverse;
-
-     }
+    }
 
     &-info {
       @include tablet {
         @include flex-align-center;
-        gap: 30px; 
+        gap: 30px;
       }
 
-      @include small-tablet{
+      @include small-tablet {
         gap: 10px;
         flex-direction: column;
         width: 100%;
@@ -101,7 +99,7 @@
       color: var(--neutral-color-150);
       line-height: 162%;
 
-      @include tablet{
+      @include tablet {
         max-width: 500px;
       }
     }
@@ -122,18 +120,17 @@
       justify-content: center;
     }
 
-    
     @include tablet {
       justify-content: space-between;
     }
-   
-    @include mobile{
+
+    @include mobile {
       gap: 40px 60px;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    @include small-mobile{
+    @include small-mobile {
       text-align: center;
     }
   }
@@ -144,10 +141,9 @@
       font-weight: 700;
       line-height: 150%;
     }
-     @include mobile{
+    @include mobile {
       min-width: 143px;
-
-     }
+    }
   }
 
   &__subitem {
@@ -192,7 +188,7 @@
     flex-wrap: wrap;
     gap: 20px 40px;
 
-    @include tablet{
+    @include tablet {
       justify-content: center;
     }
 
@@ -200,12 +196,12 @@
       @include flex-align-center;
       gap: 72px;
 
-      @include tablet{
+      @include tablet {
         gap: 42px;
       }
-      @include mobile{
+      @include mobile {
         flex-direction: column;
-        gap: 20px; 
+        gap: 20px;
       }
     }
 
@@ -213,16 +209,15 @@
       display: flex;
       gap: 40px;
 
-      @include tablet{
+      @include tablet {
         gap: 20px;
       }
 
-      @include small-mobile{
+      @include small-mobile {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px 20px;
       }
-
     }
 
     &-link {
@@ -260,7 +255,7 @@
       @include flex-align-center;
       gap: 24px;
 
-      @include tablet{
+      @include tablet {
         gap: 18px;
       }
     }
