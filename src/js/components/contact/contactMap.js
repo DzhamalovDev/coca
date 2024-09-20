@@ -12,7 +12,7 @@ export const useMap = () =>{
            
         },{
             iconLayout: 'default#image',
-            iconImageHref: '../assets/icons/map-icon.svg',
+            iconImageHref: './assets/icons/map-icon.svg',
             iconImageSize: [40,40],
             iconImageOffset:[-20,-55],
         })
