@@ -69,6 +69,25 @@
         @include flex-all-center;
         transition: var(--transition);
 
+  
+          & svg path {
+            transition: opacity var(--transition);
+  
+            &:first-child {
+              fill: var(--neutral-color-100);
+            }
+  
+            &:not(:first-child) {
+              fill: var(--neutral-color-100);
+            }
+          }
+  
+          &:hover svg {
+            path:first-child {
+              opacity: 0.2;
+            }
+          }
+
         &:hover {
           transform: scale(1.2);
         }

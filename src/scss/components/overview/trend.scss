@@ -1,0 +1,78 @@
+.trend {
+  padding: 120px 0;
+  background-color: #1d1e25;
+
+  @include mobile{
+    padding: 60px 0;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 159px 32px;
+
+    @include small-mobile{
+      text-align: center;
+    }
+
+    @include small-tablet{
+      gap: 89px 32px;
+    }
+
+
+    @include small-tablet{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__item{
+
+
+    &:last-child{
+      margin-top: -244px;
+    
+
+      @include small-tablet{
+        &:last-child{
+          margin-top: 0px;
+        }
+      }
+    }
+
+  }
+
+  &__img {
+    margin-bottom: 24px;
+
+    @include tablet{
+      margin-bottom: 14px;
+    }
+  }
+
+  &__title {
+    max-width: 584px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #fff;
+
+    @include tablet{
+      margin-bottom: 14px;
+    }
+
+    &-right {
+      max-width: 442px;
+
+      &-special {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 515px;
+    color: var(--neutral-color-150);
+    font-weight: 500;
+    line-height: 32px;
+  }
+}
