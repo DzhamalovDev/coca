@@ -54,10 +54,6 @@
 
   &__slide {
     &-item {
-      padding-bottom: 40px;
-      max-width: 407px;
-      
-
       &-large {
         max-width: 476px;
       }
@@ -86,7 +82,7 @@
     &-descr {
       display: block;
       font-weight: 500;
-      margin-bottom: 40px;
+      margin-bottom: 24px;
       line-height: 178%;
       color: var(--neutral-color-150);
 
@@ -96,6 +92,7 @@
     }
 
     &-btn {
+      display: inline-block;
       padding: 16px 40px;
       color: var(--neutral-color-100);
       border: 1px solid var(--neutral-color-40);
